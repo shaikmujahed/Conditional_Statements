@@ -1,0 +1,32 @@
+def name_parentheses(names):
+     if "(" in names and ")" in names:
+         if names.find("(") < names.find(")"):
+             return names[names.find("(") : names.find(")")]
+
+     return ""
+print(name_parentheses("This is my name (mujahed!)."))
+print(name_parentheses("no parentheses here!"))
+print(name_parentheses("David tends to use parentheses a lot(my name is in paretheses)"))
+print(name_parentheses("open (only"))
+print(name_parentheses("closed (only"))
+
+def string_type(sentence):
+    if "\n" in sentence:
+        return "page"
+    elif sentence.count(".")> 1 and " " in sentence:
+        return "paragraph"
+    elif " " in sentence:
+        return "sentence"
+    elif len(sentence)==0:
+        return "empty"
+    elif len(sentence)==1:
+        return "character"
+    else:
+        return "word"
+print(string_type(""))
+print(string_type("!"))
+print(string_type("cs1301."))
+print(string_type("This is too many cases!"))
+print(string_type("Thre's way tpp many ostriches. why are there so many ostriches. the brochure said there'd only be a few ostriches."))
+print(string_type("Paragraphs need to have multiple sentences, It's true, \nHowever, two is enough. Yes, two sentences can make a paragraph."))
+
