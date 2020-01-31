@@ -30,3 +30,105 @@ print(string_type("This is too many cases!"))
 print(string_type("Thre's way tpp many ostriches. why are there so many ostriches. the brochure said there'd only be a few ostriches."))
 print(string_type("Paragraphs need to have multiple sentences, It's true, \nHowever, two is enough. Yes, two sentences can make a paragraph."))
 
+
+def name(checkname,searchname):
+    if "A" in checkname:
+        print(searchname + "  is special char for this name!")
+    else:
+
+     myname="MUJAHED"
+name(myname,"A")
+
+
+def names_2(check_name,search_name):
+    if search_name in check_name:
+        print(search_name +" is matching!")
+    else:
+        print(search_name + " isn't matching!")
+
+
+x="Mujahed"
+names_2(x,"Mohsin")
+names_2(x,"Mujahed")
+
+
+def mail(check_mail,search_mail):
+    if search_mail in check_mail:
+        print(search_mail + " Welcome!")
+    else:
+        print(search_mail + " E-Mail does'nt matching!")
+def mob(check_no,search_no):
+    if search_no not in check_no:
+        print(search_no + " is not macting try again!")
+    else:
+        print(" OTP send!" + search_no + " on this")
+
+
+
+my_mail="jackson@gmail.com"
+mail(my_mail,"hilton@gmail.com")
+my_no="7329913104"
+mob(my_no,"7329913104")
+
+
+# print the index of "CDE" in mystring
+myString="ABCDE"
+
+print(myString.find("CDE"))
+print(myString.find("ACE"))
+
+mystring1="Mujahed"
+print(mystring1.find("ja"))
+print(mystring1.find("Mud"))
+
+
+# checks if searchstring is in checkstring
+
+def checkinstring(checkstring,searchstring):
+    if checkstring.find(searchstring) >= 0:
+        print(searchstring + " was found!")
+    else:
+        print(searchstring + " was not found!")
+
+mystring="ABCDE"
+checkinstring(mystring,"BC")
+checkinstring(mystring,"GH")
+
+def check_in_name(check_name,search_name):
+    if check_name.find(search_name) >= 0:
+        print(search_name + " was found!")
+    else:
+        print(search_name + " was not found!")
+
+my_name="Mujahed"
+check_in_name(my_name,"ja")
+check_in_name(my_name,"Z")
+
+
+def ch_frnd_name(ch_name,s_name):
+    if ch_name.find(s_name) >=0:
+        print(s_name +" was found!")
+    else:
+        print(s_name + " was not found!")
+
+frnd_name="Meer Asif Ali"
+ch_frnd_name(frnd_name,"AS")
+ch_frnd_name(frnd_name, "wx")
+
+
+mystring="ABCDE"
+print(mystring.find("CDE"))
+
+
+
+mystring="ABCDEABCDE"
+print(mystring.find("cde"))
+
+
+# parameters of find method
+mystring="ABCDEABCDEABCDE"
+print(mystring.find("CDE"))
+print(mystring.find("CDE",5))
+print(mystring.find("CDE",13))
+print(mystring.find("CDE",4,10))
+print(mystring.find("CDE",3,6))
