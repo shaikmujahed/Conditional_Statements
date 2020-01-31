@@ -9,3 +9,14 @@ print(in_parentheses("no parentheses here!"))
 print(in_parentheses("David tends to use parentheses a lot (as he is doinh right now). It tends to be quite annoying."))
 print(in_parentheses("Open (only"))
 print(in_parentheses("closed)only"))
+
+
+def lucky_seven(a_list):
+    for i in range(len(a_list)-2):
+        if a_list[i]==7:
+            if a_list[i+1]==7:
+                if a_list[i+2]==7:
+                    return True
+    return False
+print(lucky_seven([4,7,8,2,7,7,7,3,4]))
+print(lucky_seven([4,7,7,2,8,3,7,4,3]))
